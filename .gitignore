@@ -1,0 +1,29 @@
+# 가상환경 / 에디터 / 캐시
+.venv/
+.venv-1/
+.vscode/
+.claude/
+__pycache__/
+.ipynb_checkpoints/
+
+# 로컬 전용 (비공개 문서, 작업 원본)
+_private/
+
+# 대용량 중간 산출물 (fingerprint 배열)
+*.npy
+
+# 데이터: 데모 앱이 사용하는 파일만 공개 (원본 데이터는 README의 출처 참고)
+data/*
+!data/processed/
+data/processed/*
+!data/processed/all_compounds_master.csv
+!data/processed/all_compounds_with_price.csv
+
+# 모델: 데모 앱이 불러오는 파일만 공개
+models/*
+!models/mp_model.joblib
+!models/top40_descriptors.joblib
+!models/bp_model.joblib
+!models/bp_top40_descriptors.joblib
+!models/tox21_models.joblib
+!models/hazard_top40_descriptors.joblib
